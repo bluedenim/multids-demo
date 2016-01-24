@@ -42,3 +42,5 @@ Simply clone the repo and run with Maven:
 ```
 mvn spring-boot:run
 ```
+
+Then simply visit http://localhost:8080/ to see the queries made of the datasources printed out.

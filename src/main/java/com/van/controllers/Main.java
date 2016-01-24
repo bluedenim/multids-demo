@@ -22,7 +22,7 @@ public class Main {
     @RequestMapping
     public Object index() {
         Map<String,List> results = new HashMap<>();
-        results.put("default", das.getData(0));
+        results.put("default datasource", das.getData(0));
         results.put("datasourceOne", das.getData(1));
         results.put("dataSourceTwo", das.getData(2));
 

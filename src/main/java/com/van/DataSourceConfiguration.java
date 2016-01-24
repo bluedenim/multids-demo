@@ -21,7 +21,8 @@ public class DataSourceConfiguration {
     @Primary
     @ConfigurationProperties(prefix = "datasource.ds1")
     /**
-     * Data source one (also the primary/default)
+     * Data source one (also the primary/default). By default, the name of the method ("dataSourceOne") will be used for
+     * the datasource name. Or we can use @Bean(name="...").
      */
     public DataSource dataSourceOne() {
         return new DataSource();
@@ -30,7 +31,8 @@ public class DataSourceConfiguration {
     @Bean
     @ConfigurationProperties(prefix = "datasource.ds2")
     /**
-     * Data source two
+     * Data source two. By default, the name of the method ("dataSourceTwo") will be used for
+     * the datasource name. Or we can use @Bean(name="...").
      */
     public DataSource dataSourceTwo() {
         return new DataSource();
